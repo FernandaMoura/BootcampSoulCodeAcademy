@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Muda de Cor</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" onclick="verde()" onmouseout="vermelho()"  size="50"/>
+      
+        <input type="text" onclick="verde()" onmouseout="vermelho()"  size="50"/>
+
+        <input type="text" onclick="verde()" onmouseout="vermelho()"  size="50"/>
+    </form>
+
+    <script>
+        /*
+        1) Crie um script que contenha 3 campos de formulario(text), onde será aplicado via eventos as definições abaixo
+        Ao selecionar um campo o mesmo deve ter a cor ipt verde
+        Ao sair do campo o mesmo deve ficar com a cor vermelha*/
+            
+        var ipt = document.getElementsByTagName("input");
+            
+            function verde() {
+                for(i = 0; i < ipt.length; i++){
+                    ipt[i].style.backgroundColor ="#008000";
+                }  
+            }
+            function vermelho(){
+                for(i = 0; i < ipt.length; i++){
+                    ipt[i].style.backgroundColor = "#ff6347";
+                }
+            }
+    
+        </script>
+</body>
+</html>
+
+

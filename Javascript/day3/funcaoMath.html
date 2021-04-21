@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Math</title>
+
+    <script>
+/*1. Utilizando as funções matematicas crie um script que o usuario digite dois numeros e mostre na tela os numeros escolhidos e raiz quadrada dos mesmos (arredondada)*/
+
+        num1 = parseFloat(prompt("Digite um número ")); 
+        num2 = parseFloat(prompt("Digite outro número "));
+
+        document.write("O primeiro número digitado foi: "+num1 + " e sua raiz quadrada é "+Math.sqrt(num1)+ "<br />");
+        document.write("O segundo número digitado foi: "+num2 + " e sua raiz quadrada é "+Math.sqrt(num2)+ "<br />");
+
+/*
+2.Crie um script onde o usuario digite 3 numeros , esse numeros elevados a 2 , 3 e 4 , mostre o resultado de cada um deles e a soma das potencias dos 3 */
+
+        num1 = parseFloat(prompt("Digite um número ")); 
+        num2 = parseFloat(prompt("Digite outro número "));
+        num3 = parseFloat(prompt("Digite outro número "));
+
+        soma = Math.pow(num1, 2) + Math.pow(num2, 3) + Math.pow(num3, 4);
+
+        document.write("O primeiro número digitado foi: "+num1 + " e o resultado dele elevado a 2 é "+ Math.pow(num1, 2)+ "<br />");
+        document.write("O segundo número digitado foi: "+num2 + " e o resultado dele elevado a 3 é "+ Math.pow(num2, 3)+ "<br />");
+        document.write("O terceiro número digitado foi: "+num3 + " e o resultado dele elevado a 4 é "+ Math.pow(num3, 4)+ "<br />");
+
+        document.write("A soma das potências é " + soma);
+
+/*
+3.Crie um script onde o usuario digite 2 numeros e realize a divisão entre os dois sendo sempre dividido o maior pelo menor , apos exiba na tela os numeros escolhidos e o resultado da divisão arredondado para baixo(floor)*/
+
+        numeros = [];
+
+        for(i = 0; i < 2; i++){
+            numeros[i] = parseFloat(prompt("Digite 2 números" ));
+        }
+        divisao = Math.max(numeros[0],numeros[1]) / Math.min(numeros[0],numeros[1]);
+        document.write("Os números digitados são: "+numeros+"<br />");
+        document.write("O valor da divisão do maior pelo menor é  " +Math.floor(divisao));
+
+
+/*4.Crie um script onde o usuario digite um numero e esse mesmo seja subtraido de um numero randomico(0 - 1000) e mostre na tela o resultado absoluto do mesma bem como o numero escolhido pelo usuario e o numero randomico*/
+
+        numero = parseFloat(prompt("Digite um número"));
+        randomico = Math.random() * 1000;
+        subtracao = randomico - numero;
+
+        document.write("O número digitado e o aleatório são respectivamente "+ numero+" e "+randomico+ " e a subtração do primeiro no segundo é " + Math.round(subtracao));
+
+
+/*5. Crie um script onde o usuario digite o angulo que ele quer calcular , mostre na tela o angulo escolhido e seu seno , cosseno e tangente*/
+        
+        angulo = parseInt(prompt("Digite o valor do ângulo para calcular o seu seno, cosseno e tangente"));
+        
+        anguloRadiano = angulo * 0.0174533;
+        
+        document.write("O seno do " +angulo+ " é " + Math.round(Math.sin(anguloRadiano))+"<br />");
+        document.write("O cosseno do " +angulo+ " é "+ Math.round(Math.cos(anguloRadiano))+"<br />");
+        document.write("A tangente do " +angulo+ " é " + Math.round(Math.tan(anguloRadiano))+"<br />");
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

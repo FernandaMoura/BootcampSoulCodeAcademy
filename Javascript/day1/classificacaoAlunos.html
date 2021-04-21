@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de notas</title>
+
+    <script>
+
+        var alunoUm;
+
+        var notaUm = 7;
+        var notaDois = 8;
+        var notaTres = 10;
+
+        var mediaAlunoUm = ((notaUm + notaDois + notaTres)/3);
+
+        if (mediaAlunoUm >= 7){
+            var texto = "aprovado";
+        }else if (mediaAlunoUm < 4){
+            var texto = "reprovado";
+        }else{
+            var texto = "em recuperação";
+        }
+        document.write("Aluno um " + texto);
+        document.write("<br />");
+
+        var alunoDois;
+
+        var notaDoisUm = 4;
+        var notaDoisDois = 2;
+        var notaDoisTres = 3;
+
+        var mediaAlunoDois = ((notaDoisUm + notaDoisDois + notaDoisTres)/3);
+
+        if (mediaAlunoDois >= 7){
+            var texto = "aprovado";
+        }else if (mediaAlunoDois < 4){
+            var texto = "reprovado";
+        }else{
+            var texto = "em recuperação";
+        }
+        document.write("Aluno dois " + texto);
+        document.write("<br />");
+
+        var alunoTres;
+
+        var notaTresUm = 6;
+        var notaTresDois = 7;
+        var notaTresTres = 5;
+
+        var mediaAlunoTres = ((notaTresUm + notaTresDois + notaTresTres)/3);
+        
+        if (mediaAlunoTres >= 7){
+            var texto = "aprovado";
+        }else if (mediaAlunoTres < 4){
+            var texto = "reprovado";
+        }else{
+            var texto = "em recuperação";
+        }
+        document.write("Aluno três " + texto);
+        document.write("<br />");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

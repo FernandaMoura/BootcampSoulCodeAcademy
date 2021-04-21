@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Crescente e Decrescente</title>
+
+    <script>
+
+// 1. Faça um script que leia 4 números e mostre-os em ordem crescente e depois em ordem decrescente
+
+    var a = 30;
+    var b = 45;
+    var c = 100;
+    var d = 18;
+    var num2 = [];
+    var numMenor;
+    var numMaior;
+    var numMaiorDois;
+    var numMaiorTres;
+
+    if(a > b && a > c && a > d){
+        numMaior = a;
+    }else if(a < b && a < c && a < d){
+        numMenor = a;
+    }else{
+        num2[0] = a;
+    }
+
+    if(b > a && b > c && b > d){
+        numMaior = b;
+    }else if(b < a && b < c && b < d){
+        numMenor = b;
+    }else{
+        num2[1] = b;
+    }
+
+    if(c > a && c > b && c > d){
+        numMaior = c;
+    }else if(c < a && c < b && c < d){
+        numMenor = c;
+    }else{
+        num2[2] = c;
+    }
+    if(d > b && d > c && d > a){
+        numMaior = d;
+    }else if(d < b && d < c && d < a){
+        numMenor = d;
+    }else{
+        num2[3] = d;
+    }
+    console.log(num2[0], num2[1], num2[2], num2[3],)
+
+    if(num2[0] != undefined){
+        if(num2[0] > num2[1]){
+            numMaiorDois = num2[0];
+        }else{
+        numMaiorTres = num2[0];
+        } 
+    }     
+
+    if(num2[1] != undefined){
+        if(num2[1] > num2[0]){
+            numMaiorDois = num2[1];
+        }else{ 
+        numMaiorTres = num2[1];
+        }
+    }  
+// precisa corrigir
+    if(num2[2] != undefined){
+        if(num2[2] > num2[1]){
+            numMaiorDois = num2[0];
+        }else{
+        numMaiorTres = num2[0];
+        } 
+    }  
+    if(num2[3] != undefined){
+        if(num2[0] > num2[1]){
+            numMaiorDois = num2[0];
+        }else{
+        numMaiorTres = num2[0];
+        } 
+    }  
+
+    document.write("Números em ordem crescente: <br/ >");
+    document.write(numMenor,"<br />" ,numMaiorTres,"<br />", numMaiorDois,"<br />", numMaior,"<br / >");
+
+    document.write("Números em ordem decrescente: <br/ >");
+    document.write(numMaior,"<br />" ,numMaiorDois,"<br />", numMaiorTres,"<br />", numMenor);
+
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

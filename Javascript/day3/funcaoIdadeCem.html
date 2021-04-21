@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Maioridade e 100</title>
+    <script>
+        // 1 - função que mostra se a idade digitada pelo usuario é maior ou menor de idade.
+
+        var idade = parseInt(prompt("Digite a sua idade"));
+
+        function maiorDeIdade(idade){
+            if(idade >= 18){
+                document.write("Você é maior de idade!");   
+            }else {
+                document.write("Você é menor de idade!"); 
+            }
+        }
+        maiorDeIdade(idade);
+
+        // 2 - função que retorna quando o numero digitado for maior que 100.  
+
+        var num = parseInt(prompt("Digite um número: "));
+
+        function numMaiorCem(num){
+            if (num > 100){
+                return num;
+            }else{
+                return "Número menor que 100";
+            }
+        }
+        alert(numMaiorCem(num));
+
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatorial</title>
+
+    <script>
+        /* Escreva um algoritmo que peça para o usuario digitar um valor e imprima a seqüência de valores do cálculo de A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
+        */
+
+        /*
+        1o doc.write para escrever o No! = 
+        for usando a idade para decrescer e doc.write para escrever a cada loop
+        doc.write final para dar o resultado do fatorial
+        */
+        var fatorial = 1;
+        var idade = parseInt(prompt("Qual a sua idade?"));
+        var i = idade;
+            document.write(idade+"! = ")
+        for(var i = idade; i >= 1; i--) {
+            fatorial = i * fatorial;
+            document.write(i+" x ");
+        }
+            document.write("= "+ fatorial);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

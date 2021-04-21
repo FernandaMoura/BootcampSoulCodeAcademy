@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Proposto - JS</title>
+</head>
+<body>
+   <!-- 
+    1.Crie um script que contenha 3 campos de formulario(text) , onde será aplicado via eventos as definições abaixo
+    . Ao selecionar um campo o mesmo deve ter a cor verde
+    . Ao sair do campo o mesmo deve ficar com a cor vermelha
+    -->
+
+    <p>Clique em um dos campos:</p><br / >
+
+    <input  type="text" onfocus="myFunction(this)" onblur="alteraCor(this)">
+    <input   type="text" onfocus="myFunction(this)" onblur="alteraCor(this)">
+    <input   type="text" onfocus="myFunction(this)" onblur="alteraCor(this)">
+
+
+
+    <script>
+        function myFunction(x) {
+            x.style.background = "green";
+        }
+
+        function alteraCor(x) {
+            x.style.background = "red";
+        }
+
+    </script>
+
+</body>
+</html>
+
+

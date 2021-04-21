@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math com Array</title>
+    <script>
+        
+        numeros = [];
+        raiz =[];
+
+        for(i = 0; i < 2; i++){
+            numeros[i] = parseFloat(prompt("Digite 2 números" ));
+            raiz[i]=Math.sqrt(numeros[i]).toFixed(2); 
+        }
+        document.write("Os números digitados são: "+numeros+"<br />");
+        document.write("A raiz quadrada deles é respectivamente " +raiz);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

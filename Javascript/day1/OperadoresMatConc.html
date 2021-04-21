@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Matemáticos</title>
+
+    <script>
+
+// Faça um script  com contenha os seguintes cálculos e exiba na tela:
+
+    var idade = 46;
+    var filho = 0;
+
+//minha idade mais idade filho - não tenho
+    var somaUm = idade + filho;
+
+    var pai = 83;
+    var irmao = 51;
+
+//minha idade multiplicada pela do meu irmão
+    var euIrmao = idade * irmao;
+
+//item anterior dividido pela minha idade + filho
+    var divideItem01 = euIrmao / somaUm;
+
+    var salario1 = 10000;
+    var salario2 = 15000;
+    var rendaFamiliar = (salario1 + salario2)/2;
+
+// 1. Exiba na tela a soma da sua idade some com a do seu filho(a); //quem não tem soma com 0.
+    document.write(idade+= filho);
+    document.write("<br />");
+
+// // 2. O resultado a soma do item anterior, multiplique com a idade do seu pai;
+    document.write(somaUm*= pai);
+    document.write("<br />");
+
+// // 3. Agora some a idade dos seus irmãos, multiplique com sua idade e divida com o resultado do item 01;
+    document.write(divideItem01);
+    document.write("<br />");
+
+// // 4. Agora, divida renda familiar pela quantidade de pessoas que compõem sua família e o resultado multiplique por 30;
+        document.write(rendaFamiliar*= 30);
+
+//    // E por fim, exiba na tela os resultados com um texto concatenado.
+
+   alert("Minha idade é" + idade + "anos e não tenho filhos." + "Meu pai tem " + pai + " anos." + " Tenho apenas um irmão de " + irmao + " anos." + " Minha renda familiar vezes 30 é " + rendaFamiliar)
+//     </script>
+
+</head>
+<body>
+    
+</body>
+</html>

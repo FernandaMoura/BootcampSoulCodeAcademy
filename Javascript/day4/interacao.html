@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação</title>
+    <style>
+        body{
+            background-color: black;}
+        
+        h1 {
+            color: white;
+            font-size: 2em;
+        }
+        
+        input {
+            background-color: black;
+            color: white;
+            font-size: 2em;
+            width: 200px;
+            margin: 300px;
+            border: 10px solid yellow;
+        }
+
+    </style>
+    <script>
+        function digiteNumero(){
+            numero = parseInt(prompt("Digite um número maior que 0 e menor que 21."));
+            while(numero <= 0 || numero >= 21){
+                alert("Número fora do intervalo");
+                numero = parseInt(prompt("Digite um número maior que 0 e menor que 21."));
+            }
+            var sequencia = new Array(numero);
+            for(var i = 0; i < numero; i++){
+                sequencia[i] = 2*(i+1);
+              }
+              document.write("A sequência é: " + sequencia);
+            }
+    </script>
+
+</head>
+<body>
+
+<!--1) Crie um site personalizado por você que tenha um botão em html que ao ser clicado acesse uma função que peça para o usuário digitar um numero N que seja maior que 0 e menor que 21. Você deverá armazenar em um Array de números uma sequência de N (Que foi o número digitado pelo usuário) números pares, a partir do número 2. 
+
+Exs: Usuário digitou 5
+Deverá criar um Array contendo os números 2, 4, 6, 8 e 10.
+
+Usuário digitou 3
+Deverá criar um Array contendo os números 2 4 e 6. -->
+    <h1>Clique no botão e tenha uma surpresa!</h1>
+    <form>
+        <input type="button" onclick="digiteNumero()" value="Clique" />
+    </form>
+
+</body>
+</html>

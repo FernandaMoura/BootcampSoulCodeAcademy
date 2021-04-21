@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando o For</title>
+
+    <script>
+        /*Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de três e que se encontram no conjunto dos números de 1 até 500.*/
+        //num % 3 - selecionar apenas múltiplo de 3 - %2 != 0 testa número ímpar
+
+        soma = 0;
+        for(num = 1; num <=500; num++){
+            if(num % 3 == 0 && num%2 !=0){
+                soma = soma + num;
+            }
+        }
+        document.write(soma);
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

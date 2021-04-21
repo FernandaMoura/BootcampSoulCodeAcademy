@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situações com Switch 2</title>
+
+    <script>
+    /*2.Um funcionário irá receber um aumento de acordo com o seu plano de
+    trabalho, de acordo com a tabela abaixo:
+    Plano Aumento
+    A. 10%
+    B. 15%
+    C. 20%
+    Faça um programa que leia o plano de trabalho e o salário atual de um funcionário e calcula e imprime o seu novo salário.*/
+
+    var salarioAtual = 100;
+    var planoA = 1.10;
+    var planoB = 1.15;
+    var planoC = 1.20;
+    var novoSalario = planoA;
+
+    switch(novoSalario){
+        case planoA:
+            document.write("O salário atual é "+salarioAtual+ " e o novo salário no plano A será: "+salarioAtual*planoA);
+            break;
+        case planoB:
+        document.write("O salário atual é "+salarioAtual+" e o novo salário do plano B será: "+salarioAtual*planoB);
+            break;    
+        case planoC:
+        document.write("O salário atual é "+salarioAtual+" e o novo salário do plano C será: "+salarioAtual*planoC);
+            break;           
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

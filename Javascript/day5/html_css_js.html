@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS</title>
+</head>
+<body>
+<!-- 
+ -->
+
+<!-- 1) Crie um programa que tenha um botão em html que ao ser clicado acesse uma função que peça para o usuário digitar um numero N que seja maior que 0 e menor que 10 que corresponderá a quantidade de números do Array, que serão temperaturas.  -->
+
+    <button id="btn" onclick="digitaNum()">Clicar</button>
+
+    <script>
+        function digitaNum(){
+            var numeroN = parseInt(prompt("Digite um número maior que 0 e menor que 10"));
+            while(numeroN <= 0 || numeroN >= 10){
+                alert("Número fora dos parâmetros");
+                numeroN = parseInt(prompt("Digite um número maior que 0 e menor que 10"));
+            }
+               
+            var numeroM = parseInt(prompt("Digite um número maior que 0 e menor que 10"));   
+            while(numeroM <= 0 || numeroM >= 10){
+                alert("Número fora dos parâmetros");
+                numeroM = parseInt(prompt("Digite um número maior que 0 e menor que 10"));
+            }
+            
+//Em seguida, leia também um número M que seja maior que 0 e menor que 10 que corresponderá a quantidade de nomes que serão inseridos em um outro Array. 
+//Em seguida, utilizando o prompt de comando, receba a quantidade N de temperaturas e armazene no Array. Utilize o prompt para receber quantidade M de nomes e armazene no outro vetor. 
+
+            var temperatura = [];
+            var nomes = [];
+            for(i = 0; i < numeroN; i++){
+                temperatura[i] = (prompt("Digite uma temperatura"));  
+            }
+            for(i = 0; i < numeroM; i++){
+                nomes[i] = (prompt("Digite um nome"));  
+            }
+//• Verifique se no vetor de nomes existe o nome “Eliana”
+            for(i = 0; i < nomes.length; i++){
+                if(nomes[i] == "Eliana")
+                document.write("O nome Eliana foi incluído pelo usuário <br />");
+                break;
+            }
+//• Exiba a posição do nome “Carlos” caso exista. Caso não exista, informe ao usuário.
+            var aux = 0;
+            for(i = 0; i < nomes.length; i++){
+                if(nomes[i] == "Carlos"){
+                    document.write("O nome Carlos está na posição: " + [i]+ "<br />");
+                    aux = 1;
+                    break;
+                }
+            }    
+            if(aux == 0){
+                    document.write("O usuário não digitou o nome Carlos <br />");  
+            }
+
+//• Exiba na tela as temperaturas maiores que 20.
+            var tempMaiorVinte = [];
+            for(i = 0; i < temperatura.length; i++){
+                if(temperatura[i] > 20){
+                    tempMaiorVinte[i] = temperatura[i];
+                }
+            }
+            document.write("As temperaturas acima de 20 são: " + tempMaiorVinte+ "<br />");
+
+       // Exiba o cubo dos números do Array de números.
+            
+            var tempCubo = [];
+
+            for(i = 0; i < temperatura.length; i++){
+                tempCubo[i] = temperatura[i]**3;
+            }
+            document.write("As temperaturas ao cubo são: " + tempCubo);
+        }
+    </script>
+</body>
+</html>

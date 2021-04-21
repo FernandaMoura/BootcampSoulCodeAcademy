@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade dos usuários</title>
+
+    <script>
+        /*Peça ao usuário para digitar 10 idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.*/
+        
+        var i = 0;
+        var MaiorCount = 0;
+        var MenorCount = 0;
+        
+        //vai pedir a idade e aumentar o contador de prompt antes de entrar para verificar condição da idade
+        do{
+            idade = parseInt(prompt("Digite a sua idade")); 
+            i++;
+        //verifica condiçao maior de idade e conta o número de pessoas maiores
+            if(idade >= 18){
+            MaiorCount++;
+            } else {
+            MenorCount++
+            }
+        }while(i < 10);  
+
+        document.write(MaiorCount+" pessoa(s) maiore(s) de idade e "+MenorCount+ " menores de idade.")
+     
+
+        /* ----- exemplo da classe usando array
+        idade = [];
+        var i = 0;
+        var count = 0;
+
+        do{
+            idade[i] = parseInt(prompt("Digite a sua idade")); 
+
+            if(idade[i] >= 18){
+            count++;
+            }
+            i++;
+        }while(i < 3);  
+
+        alert(count+" pessoa(s) é/são maiore(s) de idade.");
+        document.write(idade[1]);
+        */
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

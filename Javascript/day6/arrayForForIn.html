@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array, laço For e For In</title>
+</head>
+<body>
+
+
+    <script>
+        // Crie um script que vai pedir o número de alunos da turma ( via prompt).
+        var alunos = parseInt(prompt("Qual o número de alunos na turma"));
+        // Em seguida, vai perguntar qual foi a nota de cada um deles.
+        notas = new Array (alunos);
+        for(i = 0; i < alunos; i++){
+            notas[i] = parseInt(prompt("Qual a nota dos alunos?"));
+        }
+/*
+Use array para armazenar as notas, laço FOR para preencher cada elemento do array e um laço FOR IN para calcular a soma das notas (cálculo necessário para calcular a média).
+*/
+        soma = 0;
+        for( let totalNotas in notas){
+            soma = soma + notas[totalNotas];
+        }
+
+   // No final, seu script deve fornecer a média geral da turma.
+        var media = soma/alunos;
+
+        document.write("A média dos alunos é igual a " + media);
+
+    </script>
+</body>
+</html>
+
+

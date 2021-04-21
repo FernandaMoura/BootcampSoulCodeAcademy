@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Três by Class</title>
+</head>
+<body>
+<!-- mudar texto do 1o elemento da class = "teste" -->
+
+    <p class = "teste">Um</p>
+    <p class = "teste">Dois</p>
+    <p class = "teste">Três</p>
+    <p class = "teste">Quatro</p>
+    <button onclick="mudar()">Clique</button>
+
+    <script>
+        function mudar(){
+        document.getElementsByClassName("teste")[0].innerHTML = "Hello";
+    }
+    </script>
+
+</body>
+</html>

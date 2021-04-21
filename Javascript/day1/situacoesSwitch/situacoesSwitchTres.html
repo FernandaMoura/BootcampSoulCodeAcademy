@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situações com Switch 3</title>
+
+    <script>
+    /*Desafio :
+    3.O cardápio de uma lancheria é o seguinte:
+
+    Especificação Código Preço
+    Cachorro quente 100 1.20
+    Bauru simples 101 1.30
+    Bauru com ovo 102 1.50
+    Hambúrger 103 1.20
+    Cheeseburguer 104 1.30
+    Refrigerante 105 1.00
+
+
+    Implemente um programa que leia o código do item pedido, a quantidade e calcule o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item.*/
+
+    var codigo = 104;
+    var preco = [1.20, 1.30, 1.50, 1.20, 1.30, 1.00 ];
+    var quantidade = 3;
+    var pedido = ["Cachorro-quente(s)", "Bauru(s) Simples", "Bauru(s) com Ovo", "Hamburguer(es)", "ChesseBurguer(es)", "Refrigerante(s)"];
+
+    switch(codigo){
+        case 100:
+        document.write("O seu pedido: "+quantidade+" "+pedido[0]+". O valor a ser pago é: R$ "+quantidade*preco[0]+" reais.");
+            break;
+        case 101:
+        document.write("O seu pedido: "+quantidade+" "+pedido[1]+". O valor a ser pago é: R$ "+quantidade*preco[1]+" reais.");
+            break;
+        case 102:
+        document.write("O seu pedido: "+quantidade+" "+pedido[2]+". O valor a ser pago é: R$ "+quantidade*preco[2]+" reais.");
+            break;
+        case 103:
+        document.write("O seu pedido: "+quantidade+" "+pedido[3]+". O valor a ser pago é: R$ "+quantidade*preco[3]+" reais.");
+            break;
+        case 104:
+        document.write("O seu pedido: "+quantidade+" "+pedido[4]+". O valor a ser pago é: R$ "+quantidade*preco[4]+" reais.");
+            break;
+        case 105:
+        document.write("O seu pedido: "+quantidade+" "+pedido[5]+". O valor a ser pago é: R$ "+quantidade*preco[5]+" reais.");
+            break;
+            default:
+                document.write("Código de produto não encontrado.");
+    }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

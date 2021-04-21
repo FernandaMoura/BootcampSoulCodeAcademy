@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funçoes com Array</title>
+
+    <script>
+/*
+Crie um script que contenha uma vetor com n posições(você determina o tamanho do vetor) onde irá guardar números inteiros. Em seguida crie uma função dobra() que irá  duplicar o valor de cada elemento do array. No final, mostre o antes e o depois do vetor:
+
+*/
+
+        function dobra(x){
+            dobrado = [];
+            for(i in x){
+                dobrado[i] = x[i] * 2;
+            }
+            document.write("Os números do vetor eram " + vetor + ". Depois de dobrados ficaram "  + dobrado + ". <br />");
+            
+        }
+        vetor = [5, 10, 15];
+        dobra(vetor);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
