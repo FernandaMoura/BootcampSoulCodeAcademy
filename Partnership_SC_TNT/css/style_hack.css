@@ -1,0 +1,158 @@
+/* recurso para zerar as margens quando o navegador inicia a leitura do código */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+}
+
+ul {
+    margin-left: 930px;
+    padding-top: 25px;
+}
+/* estilo do menu */
+li a:hover {
+    border-bottom: 2px solid red;
+}
+
+li {
+    display: inline;
+
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    font-style: monospace;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+
+main {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+/* recursos para fixar imagem na tela  */
+#logoTNT {
+    width: 150px;
+    position: fixed;
+    top: 50%;
+    left: 85%;
+}
+
+#logoSC {
+    width: 150px;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+}
+
+#container {
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+/* Aqui foi usado float  para colocar as duas imagens uma do lado da outra*/
+#calendario{
+    float: left;
+     width: 150px;
+    
+}
+/* Aqui foi usado float  para colocar as duas imagens uma do lado da outra*/
+#hackathon {
+    float: left;
+    width: 500px;
+    margin-left: 100px;
+    
+}
+/* iclusão da imagem como background */
+#banner {
+    float: left;
+    width:100% ;
+    background-image: linear-gradient(to top left, rgb(70, 66, 66), rgb(47, 44, 44));
+}
+
+/* Aqui foi usado clear  para limpar o float*/
+#tagline {
+    clear: both;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/* conteudo */
+
+#conteudo {
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+/*Aqui foi usado Overflow no box  */
+#convite {
+    width: 31%;
+    height: 400px;
+    flex-direction: column;
+    background-color: rgb(236, 235, 235);
+    border-radius: 33px;
+    overflow-y: auto;
+}
+/*Aqui foi usado Overflow no box  */
+#equipes {
+    width: 31%;
+    height: 400px;
+    flex-direction: column;
+    background-color: rgb(236, 235, 235);
+    border-radius: 33px;
+    overflow-y: auto;
+}
+/*Aqui foi usado Overflow no box  */
+#premio {
+    width: 31%;
+    height: 400px;
+    flex-direction: column;
+    background-color: rgb(236, 235, 235);
+    border-radius: 33px;
+    overflow-y: auto;
+}
+/* estilo dos parágrafos */
+#convite p,
+#equipes p,
+#premio p {
+    font-size: 20px;
+    padding: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    text-indent: 15px;
+    line-height: 1.4;
+}
+
+h3 {
+    margin-top: 10px;
+    text-decoration: underline;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+/* footer*/
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 28px;
+}

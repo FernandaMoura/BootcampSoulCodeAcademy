@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Inscreva-se</title>
+</head>
+
+<body>
+        <div id="foto">
+        <img src="imagens/hackathon.jpeg" />
+        </div>
+    <form action="#" method="GET">
+
+        <fieldset>
+            <h1>Inscreva a sua equipe e nos vemos em breve!</h1>
+            <label>Nome: <br />
+                <input type="text" name="email" maxlenght="20" required /></label> <br />
+
+            <label>Endereço: <br />
+                <input type="text" name="Endereço" required /></label><br />
+
+            <label>Telefone: <br />
+                <input type="tel" name="telefone" maxlenght="10" pattern="\(\d{2}\)\s\d{4,5}\-\d{4}"
+                    placeholder="(XX)9XXXX-XXXXX" required /></label><br />
+
+            <p>Equipe: <br /><br />
+                <input type="radio" name="equipe" value="feminina" />Feminina
+                <input type="radio" name="equipe" value="masculina" />Masculina
+                <input type="radio" name="equipe" value="Mista" />Mista
+            </p><br />
+
+            <label>Nome da equipe: <br />
+                <input type="text" name="equipe" maxlenght="20" required /></label><br />
+
+            <input type="submit" name="enviar" value="Enviar" />
+
+        </fieldset>
+
+    </form>
+    <p><a href="index.html">Voltar à página principal</a></p>
+</body>
+
+</html>

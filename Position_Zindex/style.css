@@ -1,0 +1,171 @@
+#principal {
+    margin: 10%;
+}
+
+h1 {
+    position: relative;
+    top: 25px;
+    left: 33%;
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#header {
+    width: 95%;
+    height: 100px;
+    background-color: burlywood;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#conteudo {
+    width: 95%;
+    height: 600px;
+    position: relative;
+    background-color: rgb(240, 231, 220);
+}
+
+#esquerda {
+    width: 450px;
+    height: 450px;
+    border: 1px solid brown;
+    position: relative;
+    top: 40px;
+    left: 80px;
+}
+
+#direita {
+    width: 450px;
+    height: 450px;
+    border: 1px solid brown;
+    position: relative;
+    bottom: 410px;
+    left: 600px;
+}
+#direita img {
+    width: inherit;
+    position: relative;
+    bottom: 40px;
+    z-index: 1;
+}
+#direita p {
+    width: inherit;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    bottom: 15px;
+}
+#esquerda p {
+    width: 200px;
+    background-color: white;
+}
+#esquerda img {
+    width: 450px;
+    position: relative;
+    top: 100px;
+
+    z-index: 3;
+}
+#atras {
+    z-index: 2;
+    position: relative;
+    bottom: 320px;
+    left: 250px;
+}
+#frente {
+    z-index: 4;
+    position: relative;
+    bottom: 180px;
+}
+
+/* style página conteúdo */
+
+#pagina_conteudo {
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(to bottom, white,burlywood);
+    background-repeat: no-repeat;
+    margin-left: 100px;
+}
+
+#pagina_conteudo p {
+    overflow: visible;
+}
+
+#menu {
+    position: sticky;
+    top: 30px;
+    margin-right: 200px;
+    float: right;
+}
+
+
+#box_esquerda {
+    width: 25%;
+    height: 25%;
+    position:relative;
+    left: 10px;
+    float: left;
+    top: 350px;
+    border: 2px solid lightcoral;
+    background-color: burlywood;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#box_centro {
+    width: 25%;
+    height: 25%;
+    position:relative;
+    float: left;
+    top: 350px;
+    left: 30px;
+    float: left;
+    border: 2px solid lightcoral;
+    background-color: burlywood;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#box_direita {
+    width: 25%;
+    height: 25%;
+    position:relative;
+    top: 350px;
+    left: 70px;
+    float: left;
+    border: 2px solid lightcoral;
+    background-color: burlywood;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#form {
+    width: 300px;
+    border: 1px solid lightcoral;
+    background-color: burlywood;
+    padding: 10px;
+    line-height: 2em;
+    position: fixed;
+    left:10px;
+    bottom: 10px;
+}
+
+.box {
+    width: 100px;
+    position: absolute;
+    bottom: 200px;
+}
+
+#box_esquerda img {
+    z-index: 3;
+}
+#box_centro  img {
+    z-index: -1;
+}
+#box_direita img {
+    z-index: 3;
+}

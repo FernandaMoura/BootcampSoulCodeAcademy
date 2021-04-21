@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+}
+
+ul {
+    margin-left: 930px;
+    padding-top: 25px;
+}
+
+li a:hover {
+    border-bottom: 2px solid red;
+}
+
+li {
+    display: inline;
+    
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px;
+    font-style: monospace;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+
+main {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+#logoTNT {
+    width: 150px;
+    position: fixed;
+    top: 50%;
+    left: 85%;
+}
+#logoSC {
+    width: 150px;
+    position: fixed;
+    top: 50%;
+    left: 5%;
+}
+/* Aqui foi usado justify-content para distribuir o espaço livre */
+#container {
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+#banner {
+    background-image: linear-gradient(to top left, rgb(70, 66, 66), rgb(47, 44, 44));
+}
+#banner img {
+    width: 500px;
+    margin: 0px;
+    position: relative;
+    left: 31%;
+}
+#tagline {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    background-color: lightgray;
+    text-align: center;
+}
+/* Aqui foi usado justify-content para distribuir o espaço livre */
+#conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+/* Aqui foi usado flex-direction: column, para alinhar  o espaço livre */
+#SC {
+    width: 33%;
+    height: 400px;
+    flex-direction: column;
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+#SC p, #TNT p {
+    font-size: 20px;
+    padding: 30px;
+    font-variant: small-caps;
+    text-align: center;
+    text-indent: 15px;
+    line-height: 1.4;
+}
+/* Aqui foi usado flex-direction para alinhar à direção do texto, de cima para baixo */
+#conteudo_meio {
+    width: 33%;
+    height: 400px;
+    flex-direction: column;
+}
+/* Aqui foi usado z-index para jogar a imagem do TNT para frente e position absolute */
+#original {
+    width: 200px;
+    position: absolute;
+    top: 350px;
+    right: 610px;
+    z-index: 3;
+    border-radius: 200px;
+}
+/* Aqui foi usado clip na imagem dos alunos e z-index para jogar para trás e position absolute */
+#alunos {
+    width: 400px;
+    z-index: 2;
+    position: absolute;
+    top: 500px;
+    left: 504px;
+    clip: rect(20px 350px 300px 60px);
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+/* Aqui foi usado flex-direction para alinhar em coluna */
+#TNT {
+    width: 33%;
+    height: 400px;
+    background-color: rgb(236, 235, 235);
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 28px;
+}
